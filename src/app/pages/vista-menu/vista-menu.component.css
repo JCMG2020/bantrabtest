@@ -1,0 +1,33 @@
+.menubarcardVista{
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 5px 10px rgba(168, 168, 168, 0.89);
+  display: inline-block;
+  min-height: 100vh;
+  width: 100%;
+  float: left;
+}
+
+.redondo{
+  display: block;
+  background-color: transparent;
+  border-radius: 100%;
+  border-color: #25a4ab !important;
+  width: 50px;
+  height: 50px;
+}
+
+.addcolor{
+  color: #25a4ab;
+}
+
+espacioBoton{
+
+}
+
+body {margin:2rem;}
+
+.form-rounded {
+  border-radius: 1rem;
+}

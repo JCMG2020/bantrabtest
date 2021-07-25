@@ -1,0 +1,80 @@
+<div class=" row container mt-3 ">
+ <h3>Gestion de <small> Nombre Cliente</small></h3>
+
+  <hr>
+
+  <div class="row text-right">
+    <div class="col">
+
+          <button routerLink="/MuestraGestion" class="redondo mb-4">
+            <i class="fa fa-arrow-left color" ></i>
+          </button>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <form (ngSubmit)="guardar( f )"
+          #f="ngForm">
+
+      <div class="form-group">
+        <label> Firebase Id</label>
+        <input type="text"
+               class="form-control"
+               disabled="disabled"
+               [(ngModel)]="gestion.id"
+               name="id"
+               placeholder="Firebase ID">
+        <small>Este Campo es un ID de la base de datos</small>
+      </div>
+
+      <hr>
+
+      <div class="form-group">
+        <label>No Gestion Interno</label>
+        <input type="text"
+               class="form-control"
+               [(ngModel)]="gestion.NoGestion"
+               name="noGestionText"
+               placeholder="Numero de gestion Interno">
+      </div>
+      <br>
+      <div class="form-group">
+        <label>DPI</label>
+        <input type="text"
+               class="form-control"
+               placeholder="DPI"
+               [(ngModel)]="gestion.DPI"
+               name="dpiText"
+        >
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Nombre Cliente</label>
+        <input type="text"
+               class="form-control"
+               placeholder="Nombre"
+               [(ngModel)]="gestion.Nombre"
+               name="nombreText">
+      </div>
+      <br>
+      <div class="form-group">
+        <label>Color Alerta</label>
+        <input type="text"
+               class="form-control"
+               placeholder="Color Alerta"
+               [(ngModel)]="gestion.color"
+               name="colorText">
+      </div>
+      <hr>
+      <div class="form-group text-center">
+        <button type="submit"
+                class="btn btn-primary w-25" name="button">
+
+          <i class="fa fa-save"></i>
+          Guardar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

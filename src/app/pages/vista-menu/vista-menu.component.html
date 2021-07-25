@@ -1,0 +1,50 @@
+<div class="menubarcardVista">
+  <br>
+  <br>
+
+  <div class="row container">
+    <div class="col-6 row">
+
+      <div class="col-3">
+      <button routerLink="/AddGestion" class="redondo  mb-4">
+      <i class="fa fa-plus addcolor" ></i>
+      </button>
+      </div>
+      <div class="col-3 align-centeright">
+      <p>Agregar Gesión</p>
+      </div>
+
+    </div>
+    <div class="col-6">
+      <select class="form-select form-rounded" aria-label="Default select example" >
+        <option value="1">Ascendente</option>
+        <option value="2">Descendente</option>
+      </select>
+
+    </div>
+  </div>
+
+
+
+  <div class="mb-3">
+    <input type="email" class="form-control form-rounded" id="exampleFormControlInput1" placeholder="buscar aqui">
+  </div>
+  <br>
+  <table class="table">
+    <thead class="table-secondary">
+    <tr >
+      <th scope="col">Gestion #</th>
+      <th scope="col">Nombre Completo</th>
+      <th scope="col">Dpi</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let gestion of gestiones; let i = index" class="table-{{gestion.color}}">
+      <th scope="row">{{ i + 1}}</th>
+      <td>{{gestion.Nombre}}</td>
+      <td>{{gestion.DPI}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
